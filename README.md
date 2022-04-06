@@ -4,7 +4,7 @@ This public project is based on creating an entire application with three differ
   - Application1: The application number 1 (Remote application)
   - Application2: The application number 2 (Remote application)
 
-# Steps
+# Steps to create a microfrontend project
 We need to follow the nexts steps in order to create our microfrontends structure and configure everything accordingly, it is important to hightlight that we are using commands from the Angular CLI:
 
 1. Create an empty workspace:
@@ -86,6 +86,11 @@ In those cases, we need to expose the entire app.module.ts, like this:
       })
   ]
 ```
+5. At this step, you are be able to execute all our microfrontends at the same time using the following command:
+```typescript
+  npm run run:all
+```
+
 
 
 
