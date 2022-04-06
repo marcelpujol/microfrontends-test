@@ -1,5 +1,5 @@
 # Microfrontends test project
-This public project is based on create an entire application using three different microfrontends, more specifically we will have:
+This public project is based on to create an entire application with three different microfrontends (using the module federation), more specifically we will have:
   - Shell: The menu on the left side to navigate between our apps (Host application)
   - Application1: The application number 1 (Remote application)
   - Application2: The application number 2 (Remote application)
@@ -11,14 +11,17 @@ We need to follow the nexts steps in order to create our microfrontends structur
 `ng new projects --create-application false`
 
 2. Adding the three different angular applications:
-```
+```typescript
 ng generate application shell --routing=true --style=scss
 ng generate application application1 --routing=true --style=scss
 ng generate application application2 --routing=true --style=scss
 ```
 
 3. Setup the host application (in our case the Shell):
-`ng add @angular-architects/module-federation --project shell --port 4000`
+```typescript
+  ng add @angular-architects/module-federation --project shell --port 4000
+```
+
 After we run the previous command, three new files have been created:
   - main.ts
   - bootstrap.ts
@@ -50,8 +53,11 @@ After we run the previous command, three new files have been created:
 In this case, we need to set the remote applications, like this:
 
 4. Setup the remotes applications (in our case will be Application1 and Application2):
-`ng add @angular-architects/module-federation --project application1 --port 4200
-ng add @angular-architects/module-federation --project application2 --port 4800`
+
+```typescript
+  ng add @angular-architects/module-federation --project application1 --port 4200
+  ng add @angular-architects/module-federation --project application2 --port 4800
+```
 The result of these commands is the same of the previous one:
   - main.ts
   - bootstrap.ts
