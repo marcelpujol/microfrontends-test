@@ -86,7 +86,16 @@ In those cases, we need to expose the entire app.module.ts, like this:
       })
   ]
 ```
-5. At this step, you are be able to execute all our microfrontends at the same time using the following command:
+
+5. If we take a look the `angular.json` file, we can check that all our microfrontends are correctly configured as expected, in our case we will have the following structure:
+- projects (as a root or workspace)
+  - shell: pointing to http://locahost:4000
+  - application1: pointing to http://localhost:4200
+  - application2: pointing to http://localhost:4800
+
+So, it is important to verify if we can 
+
+6. At this step, you are be able to execute all our microfrontends at the same time using the following command:
 ```typescript
   npm run run:all
 ```
