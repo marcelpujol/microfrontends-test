@@ -19,7 +19,7 @@ ng generate application application2 --routing=true --style=scss
 
 3. Setup the host application (in our case the Shell):
 ```typescript
-  ng add @angular-architects/module-federation --project shell --port 4000
+  ng add @angular-architects/module-federation --project shell --port 4200
 ```
 
 After we run the previous command, three new files have been created:
@@ -55,8 +55,8 @@ In this case, we need to set the remote applications, like this:
 4. Setup the remotes applications (in our case will be Application1 and Application2):
 
 ```typescript
-  ng add @angular-architects/module-federation --project application1 --port 4200
-  ng add @angular-architects/module-federation --project application2 --port 4800
+  ng add @angular-architects/module-federation --project application1 --port 3000
+  ng add @angular-architects/module-federation --project application2 --port 3200
 ```
 The result of these commands is the same of the previous one:
   - main.ts
@@ -89,11 +89,11 @@ In those cases, we need to expose the entire app.module.ts, like this:
 
 5. If we take a look the `angular.json` file, we can check that all our microfrontends are correctly configured as expected, in our case we will have the following structure:
 - projects (as a root or workspace)
-  - shell: pointing to http://locahost:4000
-  - application1: pointing to http://localhost:4200
-  - application2: pointing to http://localhost:4800
+  - shell: pointing to http://locahost:4200
+  - application1: pointing to http://localhost:3000
+  - application2: pointing to http://localhost:3200
 
-So, it is important to verify if we can 
+So, it is important to verify if we can launch each microfrontend separately.
 
 6. At this step, you are be able to execute all our microfrontends at the same time using the following command:
 ```typescript
