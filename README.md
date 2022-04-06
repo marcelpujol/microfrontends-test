@@ -1,5 +1,5 @@
 # Microfrontends test project
-This public project is based on to create an entire application with three different microfrontends (using the module federation), more specifically we will have:
+This public project is based on to create an entire application with three different microfrontends (with the help of the module federation), more specifically we will have:
   - Shell: The menu on the left side to navigate between our apps (Host application)
   - Application1: The application number 1 (Remote application)
   - Application2: The application number 2 (Remote application)
@@ -69,10 +69,10 @@ In those cases, we need to expose the entire app.module.ts, like this:
   plugins: [
       new ModuleFederationPlugin({
           library: { type: "module" },
-          name: "parking",
+          name: "application1",
           filename: "remoteEntry.js",
           exposes: {
-              './Module': './projects/parking/src/app/parking.module.ts',
+              './Module': './projects/application1/src/app/application1.module.ts',
           },        
           shared: share({
             "@angular/core": { singleton: true, strictVersion: true, requiredVersion: 'auto' }, 
