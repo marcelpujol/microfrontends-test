@@ -10,7 +10,7 @@ const routes: Routes = [
       remoteEntry: 'http://locahost:4200/remoteEntry.js',
       exposedModule: './Module'
     })
-    .then(m => m.AppModule)
+    .then(m => m.Application1Module)
   },
   {
     path: 'application2',
@@ -19,7 +19,7 @@ const routes: Routes = [
       remoteEntry: 'http://localhost:4800/remoteEntry.js',
       exposedModule: './Module'
     })
-    .then(m => m.AppModule)
+    .then(m => m.Application2Module)
   }
 ];
 
