@@ -1,5 +1,5 @@
 # Microfrontends test project
-This public project is based on to create an entire application with three different microfrontends (with the help of the module federation), more specifically we will have:
+This public project is based on creating an entire application with three different microfrontends (with the help of the module federation), more specifically we will have:
   - Shell: The menu on the left side to navigate between our apps (Host application)
   - Application1: The application number 1 (Remote application)
   - Application2: The application number 2 (Remote application)
