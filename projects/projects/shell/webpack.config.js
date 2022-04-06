@@ -28,8 +28,8 @@ module.exports = {
     new ModuleFederationPlugin({
         library: { type: "module" },
         remotes: {
-            "application1": "http://localhost:4200/remoteEntry.js",
-            "application2": "http://localhost:4800/remoteEntry.js",
+            "application1": "http://localhost:3000/remoteEntry.js",
+            "application2": "http://localhost:3200/remoteEntry.js",
         },
         shared: share({
           "@angular/core": { singleton: true, strictVersion: true, requiredVersion: 'auto' }, 
