@@ -11,9 +11,11 @@ We need to follow the nexts steps in order to create our microfrontends structur
 `ng new projects --create-application false`
 
 2. Adding the three different angular applications:
-`ng generate application shell --routing=true --style=scss`
-`ng generate application application1 --routing=true --style=scss`
-`ng generate application application2 --routing=true --style=scss`
+```
+ng generate application shell --routing=true --style=scss
+ng generate application application1 --routing=true --style=scss
+ng generate application application2 --routing=true --style=scss
+```
 
 3. Setup the host application (in our case the Shell):
 `ng add @angular-architects/module-federation --project shell --port 4000`
