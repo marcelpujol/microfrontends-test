@@ -30,7 +30,7 @@ module.exports = {
         name: "application2",
         filename: "remoteEntry.js",
         exposes: {
-            './Module': './projects/application2/src/app/app.module.ts',
+            './Module': './projects/application2/src/app/application2.module.ts',
         },        
         shared: share({
           "@angular/core": { singleton: true, strictVersion: true, requiredVersion: 'auto' }, 
