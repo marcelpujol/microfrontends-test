@@ -1,4 +1,22 @@
 :host {
+  .home-container {
+    width: 600px;
+    max-width: 600px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    transition: 0.3s;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px auto auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    img {
+      margin: 0 auto 16px;
+      width: 150px;
+      height: 150px;
+      border-radius: 5px;
+    }
+  }
   ul {
     list-style-type: none;
     margin: 0;
