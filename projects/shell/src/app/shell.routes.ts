@@ -1,7 +1,12 @@
 import { loadRemoteModule } from "@angular-architects/module-federation";
 import { Routes } from "@angular/router";
+import { HomeComponent } from "./components/home/home.component";
 
 export const SHELL_ROUTES: Routes = [
+  {
+    path: '',
+    component: HomeComponent
+  },
   {
     path: 'application1',
     loadChildren: () => loadRemoteModule({
