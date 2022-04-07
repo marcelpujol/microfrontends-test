@@ -1,0 +1,59 @@
+:host {
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+
+    .item-app1 {
+      display: block;
+      position: relative;
+      width: 250px;
+      height: 250px;
+      box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+      transition: 0.3s;
+      border-radius: 5px;
+      background-image: url('http://localhost:3000/assets/img1.png');
+      background-size: cover;
+      background-position: center;
+      .title {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background-color: rgba(0,0,0,0.2);
+        text-align: center;
+        p {
+          font-size: 18px;
+          font-weight: bold;
+          color: white
+        }
+      }
+    }
+
+    .item-app2 {
+      display: block;
+      position: relative;
+      width: 250px;
+      height: 250px;
+      box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+      transition: 0.3s;
+      border-radius: 5px;
+      background-image: url('http://localhost:3200/assets/img2.png');
+      background-size: cover;
+      background-position: center;
+      .title {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background-color: rgba(0,0,0,0.2);
+        text-align: center;
+        p {
+          font-size: 18px;
+          font-weight: bold;
+          color: white
+        }
+      }
+    }
+  }
+}
