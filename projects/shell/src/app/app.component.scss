@@ -1,0 +1,32 @@
+:host {
+  .container {
+    display: flex;
+    flex-direction: row;
+
+    .content {
+      max-width: calc(100vw - 200px);
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: #f1f1f1;
+    text-align: center;
+    li {
+      a {
+        display: block;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 8px 16px;
+      }
+      a:hover {
+        background-color: #555;
+        color:white;
+      }
+    }
+  }
+}
