@@ -11,7 +11,7 @@
     flex-direction: column;
     justify-content: center;
     p {
-      font-size: 2em;
+      font-size: 1em;
       font-weight: bold;
     }
     img {
@@ -22,6 +22,16 @@
     }
     .content {
       text-align: justify;
+    }
+    .current-weather {
+      div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        span {
+          margin-right: 8px;
+        }
+      }
     }
   }
 }
