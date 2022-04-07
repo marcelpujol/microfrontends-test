@@ -14,7 +14,7 @@
       box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
       transition: 0.3s;
       border-radius: 5px;
-      background-image: url('http://localhost:3000/assets/img1.png');
+      background-image: url(/assets/img1.png);
       background-size: cover;
       background-position: center;
       cursor: pointer;
@@ -40,7 +40,7 @@
       box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
       transition: 0.3s;
       border-radius: 5px;
-      background-image: url('http://localhost:3200/assets/img2.png');
+      background-image: url(/assets/img2.png);
       background-size: cover;
       background-position: center;
       cursor: pointer;
