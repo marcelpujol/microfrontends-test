@@ -13,3 +13,18 @@
   --disabled-color: #AEAEAE;
   --background-color:#F2F5F8;
 }
+
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins"), url(assets/fonts/Poppins/Poppins-Regular.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+$cotec-font: 'Poppins','Helvetica', sans-serif;
+
+body {
+  font-family: $cotec-font;
+  -webkit-user-select: none;
+  margin: 0px;
+}
