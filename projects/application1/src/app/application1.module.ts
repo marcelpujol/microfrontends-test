@@ -18,7 +18,4 @@ import { APPLICATION_1_ROUTES } from './application1.routes';
   ]
 })
 export class Application1Module {
-  constructor() {
-    debugger;
-  }
 }
