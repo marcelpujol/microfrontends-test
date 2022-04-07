@@ -17,8 +17,18 @@
     height: 100vh;
     background-color: #f1f1f1;
     p {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
       text-align: center;
       font-weight: bold;
+      font-size: 18px;
+      background-color: #ddd;
+      padding: 16px;
+      span {
+        margin-right: 8px;
+      }
     }
     li {
       a {
@@ -27,6 +37,9 @@
         align-items: center;
         text-decoration: none;
         padding: 8px 16px;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: black;
         span {
           margin-right: 8px;
         }
