@@ -87,17 +87,29 @@ In those cases, we need to expose the entire app.module.ts, like this:
 ```
 
 5. If we take a look the `angular.json` file, we can check that all our microfrontends are correctly configured as expected, in our case we will have the following structure:
-- projects (as a root or workspace)
-  - shell: pointing to http://locahost:4200
-  - application1: pointing to http://localhost:3000
-  - application2: pointing to http://localhost:3200
+  - projects (as a root or workspace)
+    - shell: pointing to http://locahost:4200
+    - application1: pointing to http://localhost:3000
+    - application2: pointing to http://localhost:3200
 
-So, it is important to verify if we can launch each microfrontend separately.
+    So, it is important to verify if we can launch each microfrontend separately.
 
 6. At this step, you are be able to execute all our microfrontends at the same time using the following command:
 ```typescript
   npm run run:all
 ```
+
+
+7. This is the final status after serve and run all our microfrontend projects:
+
+   Home component view (This component belongs to the Shell application):
+![Home component](./assets/image1.png)
+
+   App1's MF Home component view:
+![App1 MF component](./assets/image2.png)
+
+    App2's MF App component view:
+![App2 MF component](./assets/image3.png)
 
 
 
