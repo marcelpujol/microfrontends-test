@@ -27,13 +27,15 @@ After we run the previous command, three new files have been created:
   - bootstrap.ts
   - webpack.config.js and webpack.prod.config.js (We need to adapt this one to match our needs)
 
+  In this case, we need to set the remote applications, like this:
+
   ```typescript
   plugins: [
     new ModuleFederationPlugin({
         library: { type: "module" },
         remotes: {
-          "application1": "http://localhost:4200/remoteEntry.js",
-          "application2": "http://localhost:4800/remoteEntry.js",
+          "application1": "http://localhost:3000/remoteEntry.js",
+          "application2": "http://localhost:3200/remoteEntry.js",
         },
         shared: share({
           "@angular/core": { singleton: true, strictVersion: true, requiredVersion: 'auto' }, 
@@ -48,9 +50,6 @@ After we run the previous command, three new files have been created:
     sharedMappings.getPlugin()
   ]
   ```
-
-
-In this case, we need to set the remote applications, like this:
 
 4. Setup the remotes applications (in our case will be Application1 and Application2):
 
