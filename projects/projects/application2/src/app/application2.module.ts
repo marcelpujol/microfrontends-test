@@ -10,7 +10,7 @@ import { APPLICATION_2_ROUTES } from './application2.routes';
   ],
   imports: [
     BrowserModule,
-    RouterModule.forChild(APPLICATION_2_ROUTES)
+    RouterModule.forRoot(APPLICATION_2_ROUTES)
   ],
   providers: [],
   bootstrap: [AppComponent]

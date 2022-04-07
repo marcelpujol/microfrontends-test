@@ -10,9 +10,11 @@ import { APPLICATION_1_ROUTES } from './application1.routes';
   ],
   imports: [
     BrowserModule,
-    RouterModule.forChild(APPLICATION_1_ROUTES)
+    RouterModule.forRoot(APPLICATION_1_ROUTES)
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [
+    AppComponent
+  ]
 })
 export class Application1Module { }
