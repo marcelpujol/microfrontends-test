@@ -12,6 +12,7 @@ import { SHELL_ROUTES } from './shell.routes';
     BrowserModule,
     RouterModule.forRoot(SHELL_ROUTES)
   ],
+  exports: [ RouterModule ],
   providers: [],
   bootstrap: [AppComponent]
 })

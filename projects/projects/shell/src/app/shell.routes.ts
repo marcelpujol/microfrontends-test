@@ -7,9 +7,9 @@ export const SHELL_ROUTES: Routes = [
     loadChildren: () => loadRemoteModule({
       type: 'module',
       remoteEntry: 'http://localhost:3000/remoteEntry.js',
-      exposedModule: './Module'
+      exposedModule: 'Application1Home'
     })
-    .then(m => m.Application1Module)
+    .then(m => m.HomeModule)
   },
   {
     path: 'application2',
