@@ -16,13 +16,20 @@
     width: 200px;
     height: 100vh;
     background-color: #f1f1f1;
-    text-align: center;
+    p {
+      text-align: center;
+      font-weight: bold;
+    }
     li {
       a {
-        display: block;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
         text-decoration: none;
-        text-transform: uppercase;
         padding: 8px 16px;
+        span {
+          margin-right: 8px;
+        }
       }
       a:hover {
         background-color: #555;
