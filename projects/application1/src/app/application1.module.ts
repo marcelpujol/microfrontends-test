@@ -17,4 +17,5 @@ import { APPLICATION_1_ROUTES } from './application1.routes';
     AppComponent
   ]
 })
-export class Application1Module { }
+export class Application1Module {
+}
